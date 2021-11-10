@@ -142,12 +142,7 @@ export function createImage(url: string): Promise<HTMLImageElement> {
 export async function svgToDataURL(svg: SVGElement): Promise<string> {
   return Promise.resolve()
     .then(() => new XMLSerializer().serializeToString(svg))
-    .then((string) =>
-      string.replace(
-        /background-image:/g,
-        '-webkit-background-clip: text; background-image:',
-      ),
-    )
+    .then((string) => string.replace(/background: linear-gradient\(/g, '-webkit-background-clip: text !important; background: linear-gradient('))
     .then(encodeURIComponent)
     .then((html) => `data:image/svg+xml;charset=utf-8,${html}`)
 }
