@@ -111,10 +111,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bubkoo/html-to-image.git"
+    "url": "git+https://github.com/GAUSS-inc/html-to-image.git"
   },
   "bugs": {
-    "url": "https://github.com/bubkoo/html-to-image/issues"
+    "url": "https://github.com/GAUSS-inc/html-to-image/issues"
   },
-  "homepage": "https://github.com/bubkoo/html-to-image#readme"
+  "homepage": "https://github.com/GAUSS-inc/html-to-image#readme"
 }
